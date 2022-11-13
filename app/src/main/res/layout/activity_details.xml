@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6127047"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/a_jameel_noori_nastaleeq"
+        android:hint="لفظ "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="20dp"
+
+        android:textStyle="bold" />
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvDetailsShowWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#886CCCA3"
+            android:fontFamily="@font/a_jameel_noori_nastaleeq"
+            android:text="آب داری"
+            android:paddingHorizontal="20dp"
+
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDetailsShowWordAsl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#886CCCA3"
+            android:fontFamily="@font/a_jameel_noori_nastaleeq"
+            android:hint="اصل: فارسی"
+            android:paddingHorizontal="20dp"
+
+            android:textColor="@color/black"
+            android:textSize="18dp"
+
+             />
+
+        <TextView
+            android:id="@+id/tvDetailsShowWordQism"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#886CCCA3"
+            android:fontFamily="@font/a_jameel_noori_nastaleeq"
+            android:hint="قسم: اسم مونث"
+            android:paddingHorizontal="20dp"
+
+            android:textColor="@color/black"
+            android:textSize="18dp"
+
+             />
+
+        <TextView
+            android:id="@+id/tvDetailsShowWordWazn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#886CCCA3"
+            android:fontFamily="@font/a_jameel_noori_nastaleeq"
+            android:hint="وزن: 2122"
+            android:paddingHorizontal="20dp"
+
+            android:textColor="@color/black"
+            android:textSize="18dp"
+
+             />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/a_jameel_noori_nastaleeq"
+        android:hint="لفظ کے معنی"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="20dp"
+
+        android:textStyle="bold" />
+
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="5dp"
+        app:cardCornerRadius="20dp"
+        >
+
+
+
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvDetailsShowMeaning"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#886CCCA3"-->
+<!--            android:fontFamily="@font/a_jameel_noori_nastaleeq"-->
+<!--            android:text="@string/sample_text"-->
+<!--            android:paddingVertical="10dp"-->
+<!--            android:paddingHorizontal="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="20dp"-->
+
+<!--             />-->
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <WebView
+            android:id="@+id/wvMeaning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </ScrollView>
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

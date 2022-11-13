@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A4ACC88D"
+    android:orientation="vertical"
+
+
+    tools:context=".SearchActivity">
+
+
+    <LinearLayout
+      android:id="@+id/linearSearchBar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/searchbar_round_border_background"
+      android:orientation="horizontal"
+      android:layout_margin="10dp"
+        android:padding="10dp"
+
+      >
+
+        <ImageButton
+            android:id="@+id/btnMicSearch"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/green_circled_mic"
+            />
+
+
+        <LinearLayout
+
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="5dp"
+
+
+            android:background="@drawable/edittext_round_background"
+            >
+
+
+            <ImageButton
+                android:id="@+id/btnCloseSearch"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/icon_cancel_lightgreen"
+                />
+
+
+        <EditText
+            android:id="@+id/etSearchText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textCursorDrawable="@drawable/dark_green_cursor"
+            android:padding="5dp"
+
+
+
+            android:background="@drawable/edittext_round_background"
+            android:hint="لفظ تلاش کریں..."
+            android:textColorHint="#5D805E"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnSearchIcon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+
+            android:layout_gravity="center"
+            android:background="@drawable/green_square_searxh"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp"
+
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/iconDeleteRecents"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_baseline_delete_24"
+            app:tint="#838C83"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+
+
+            />
+
+
+
+        <TextView
+        android:id="@+id/tvListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:text="حالیہ الفاظ"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#838C83"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/edittext_round_background"
+        android:orientation="vertical">
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/meaningsListRecycler"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
